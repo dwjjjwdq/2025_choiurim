@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>counter : 0</h1>
+    <button id = "btn-inc" > Inc  </button>
+
+    <script>
+        var counterOutput = document.getElementById("counter-output");
+        var btnInc = document.getElementById("btn-inc");
+        var counter = 0;
+
+        btnInc.addEventListener("click", () => {
+            Console.log('Click test' + counter);
+            counterOutput.innerText = "counter : " + counter;
+        });
+    </script>
 </body>
 </html>
